@@ -1,0 +1,9 @@
+version: '3.8'
+services:
+  azuracast-player:
+    build: .
+    ports:
+      - "8080:80"
+    environment:
+      - API_BASE_URL=https://votre-instance-azuracast.fr
+      - API_KEY=VOTRE_CLE_API
